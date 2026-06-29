@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Berli Feriz Adam - Mahasiswa D3 Sistem Informasi, Full Stack Developer, UI/UX Designer. Portfolio profesional dengan pengalaman Laravel, Flutter, dan Machine Learning.">
+  <meta name="keywords" content="Berli Feriz Adam, Full Stack Developer, Laravel, Flutter, UI/UX, Portfolio, Web Developer">
+  <meta name="author" content="Berli Feriz Adam">
+  <meta property="og:title" content="Berli Feriz Adam | Portfolio">
+  <meta property="og:description" content="Mahasiswa D3 Sistem Informasi & Full Stack Developer">
+  <meta property="og:type" content="website">
+  <title>Berli Feriz Adam | Full Stack Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader" class="loader">
+    <div class="loader-content">
+      <div class="loader-logo">
+        <span class="loader-bracket">&lt;</span>
+        <span class="loader-text">BFA</span>
+        <span class="loader-bracket">/&gt;</span>
+      </div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+      <p class="loader-tagline">Keep Learning, Keep Building.</p>
+    </div>
+  </div>
+
+  <!-- Particle Canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>BFA<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero section" id="home">
+      <div class="hero-bg parallax-bg"></div>
+      <div class="container hero-container">
+        <div class="hero-content reveal">
+          <p class="hero-greeting">Halo, Saya</p>
+          <h1 class="hero-name">Berli Feriz Adam</h1>
+          <p class="hero-status">Mahasiswa D3 Sistem Informasi</p>
+          <div class="hero-typing">
+            <span id="typing-text"></span>
+            <span class="typing-cursor">|</span>
+          </div>
+          <div class="hero-buttons">
+            <a href="assets/cv-berli-feriz-adam.pdf" class="btn btn-primary" download>
+              <i class="fas fa-download"></i> Download CV
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fas fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="stat-card glass">
+            <span class="stat-number" data-target="3">0</span>
+            <span class="stat-label">Years Learning</span>
+          </div>
+          <div class="stat-card glass">
+            <span class="stat-number" data-target="6">0</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-card glass">
+            <span class="stat-number" data-target="15">0</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="hero-scroll" aria-label="Scroll down">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Siapa Saya?</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-image reveal">
+            <div class="about-avatar glass">
+              <div class="avatar-inner">
+                <i class="fas fa-code"></i>
+              </div>
+              <div class="avatar-ring"></div>
+            </div>
+          </div>
+          <div class="about-content reveal">
+            <p>Saya merupakan mahasiswa D3 Sistem Informasi yang memiliki ketertarikan besar pada bidang <strong>Web Development</strong>, <strong>UI/UX Design</strong>, <strong>Mobile Development</strong>, <strong>API Development</strong>, <strong>Machine Learning</strong>, serta <strong>Business Digital</strong>.</p>
+            <p>Saya senang membangun aplikasi yang tidak hanya berfungsi dengan baik, tetapi juga memiliki pengalaman pengguna yang menarik. Selain mengembangkan software, saya juga memiliki minat pada desain antarmuka modern menggunakan Figma serta pengembangan produk digital.</p>
+            <p>Saya terus belajar berbagai teknologi terbaru untuk meningkatkan kemampuan sebagai <strong>Full Stack Developer</strong>.</p>
+            <div class="about-tags">
+              <span class="tag"><i class="fas fa-laptop-code"></i> Web Dev</span>
+              <span class="tag"><i class="fas fa-palette"></i> UI/UX</span>
+              <span class="tag"><i class="fas fa-mobile-alt"></i> Mobile</span>
+              <span class="tag"><i class="fas fa-brain"></i> ML</span>
+              <span class="tag"><i class="fas fa-rocket"></i> Startup</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Skills</span>
+          <h2 class="section-title">Keahlian Saya</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category glass reveal">
+            <h3><i class="fas fa-desktop"></i> Frontend</h3>
+            <div class="skill-item">
+              <div class="skill-info"><span>HTML</span><span>90%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>CSS</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>JavaScript</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-category glass reveal">
+            <h3><i class="fas fa-server"></i> Backend</h3>
+            <div class="skill-item">
+              <div class="skill-info"><span>PHP</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Laravel</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>REST API</span><span>75%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Sanctum Authentication</span><span>70%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-category glass reveal">
+            <h3><i class="fas fa-mobile-alt"></i> Mobile</h3>
+            <div class="skill-item">
+              <div class="skill-info"><span>Flutter</span><span>70%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-category glass reveal">
+            <h3><i class="fas fa-database"></i> Database</h3>
+            <div class="skill-item">
+              <div class="skill-info"><span>MySQL</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-category glass reveal">
+            <h3><i class="fas fa-paint-brush"></i> Design</h3>
+            <div class="skill-item">
+              <div class="skill-info"><span>Figma</span><span>75%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>UI/UX Design</span><span>70%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-category glass reveal">
+            <h3><i class="fas fa-brain"></i> Machine Learning</h3>
+            <div class="skill-item">
+              <div class="skill-info"><span>Python</span><span>75%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Data Preprocessing</span><span>70%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Classification</span><span>65%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="65"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Data Visualization</span><span>70%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-category glass reveal">
+            <h3><i class="fas fa-tools"></i> Tools</h3>
+            <div class="tools-list">
+              <span class="tool-badge"><i class="fab fa-git-alt"></i> Git</span>
+              <span class="tool-badge"><i class="fab fa-github"></i> GitHub</span>
+              <span class="tool-badge"><i class="fas fa-code"></i> VS Code</span>
+              <span class="tool-badge"><i class="fas fa-video"></i> PRISM Live Studio</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section class="experience section" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Experience</span>
+          <h2 class="section-title">Perjalanan Saya</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-year reveal">2022</div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <h3>Belajar Basic Pemrograman & Laravel — SMK Asallam Bandung</h3>
+              <p>Memulai belajar dasar pemrograman dan framework <strong>Laravel</strong> pada tahun 2022 saat menempuh pendidikan di SMK Asallam Bandung. Membangun fondasi logika pemrograman dan pengenalan pertama terhadap pengembangan web berbasis Laravel.</p>
+              <div class="timeline-tags">
+                <span>Basic Pemrograman</span>
+                <span>Laravel</span>
+                <span>SMK</span>
+                <span>Bandung</span>
+                <span>2022</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <h3>Magang di UIN Sunan Gunung Djati</h3>
+              <p>Mengikuti program magang selama <strong>3 bulan</strong> di UIN Sunan Gunung Djati, dari <strong>September hingga November 2022</strong>. Mendapatkan pengalaman langsung di lingkungan profesional dan memperluas wawasan di bidang teknologi informasi.</p>
+              <div class="timeline-tags">
+                <span>Magang</span>
+                <span>UIN Sunan Gunung Djati</span>
+                <span>September — November</span>
+                <span>3 Bulan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-year reveal">2023</div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <h3>Masuk ke Telkom University</h3>
+              <p>Memulai perkuliahan <strong>D3 Sistem Informasi</strong> di Telkom University dan melanjutkan perjalanan belajar di bidang teknologi informasi secara lebih mendalam.</p>
+              <div class="timeline-tags">
+                <span>Telkom University</span>
+                <span>D3 Sistem Informasi</span>
+                <span>Kuliah</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-year reveal">2024</div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <h3>Mulai Mendalami Web Development</h3>
+              <ul>
+                <li>Belajar HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <h3>Mendalami Laravel — Telkom University</h3>
+              <p>Memperdalam pemahaman Laravel saat kuliah D3 Sistem Informasi di Telkom University. Menguasai konsep MVC, Routing, Migration, Seeder, Authentication, CRUD, REST API, serta pengembangan aplikasi berbasis Laravel yang sebelumnya sudah dipelajari di SMK.</p>
+              <div class="timeline-tags">
+                <span>Laravel</span>
+                <span>MVC</span>
+                <span>REST API</span>
+                <span>Authentication</span>
+                <span>CRUD</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <h3>Belajar UI/UX Design</h3>
+              <p>Mulai menggunakan Figma untuk mendesain antarmuka aplikasi modern.</p>
+            </div>
+          </div>
+
+          <div class="timeline-year reveal">2025</div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <h3>Pengembangan SmartEV</h3>
+              <p>Mengembangkan website Company Profile SmartEV bersama tim menggunakan Figma dan Laravel.</p>
+              <div class="timeline-tags">
+                <span>UI Design</span>
+                <span>Company Profile</span>
+                <span>Responsive Design</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <h3>Pengembangan Project CafeSync</h3>
+              <p>Merancang sistem informasi manajemen kafe.</p>
+              <p><strong>Membuat:</strong> BPMN, Activity Diagram, Use Case, UI Design, Database Design</p>
+              <div class="timeline-tags">
+                <span>Admin</span>
+                <span>Kasir</span>
+                <span>Gudang</span>
+                <span>Owner</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <h3>Pengembangan API Laravel</h3>
+              <p>Membangun REST API menggunakan Laravel Sanctum.</p>
+              <div class="timeline-tags">
+                <span>Login</span>
+                <span>Register</span>
+                <span>Authentication</span>
+                <span>Profile</span>
+                <span>Task Management</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <h3>Flutter Development</h3>
+              <p>Mengembangkan aplikasi Flutter.</p>
+              <div class="timeline-tags">
+                <span>Dialog</span>
+                <span>SnackBar</span>
+                <span>Bottom Sheet</span>
+                <span>Navigation</span>
+                <span>State Management</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <h3>Machine Learning</h3>
+              <p>Mengembangkan model klasifikasi Breast Cancer menggunakan Python.</p>
+              <div class="timeline-tags">
+                <span>Data Cleaning</span>
+                <span>Preprocessing</span>
+                <span>Resampling</span>
+                <span>Model Comparison</span>
+                <span>Evaluation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <h3>Business Project — Kizmain</h3>
+              <p>Membuat Business Plan startup digital bernama <strong>Kizmain</strong>.</p>
+              <p>Platform penyedia template website gratis dan premium untuk UMKM dan Individu.</p>
+              <div class="timeline-tags">
+                <span>Custom Website</span>
+                <span>Web Template</span>
+                <span>Digital Product</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-year reveal">2026</div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <h3>Magang di SmartEV</h3>
+              <p>Mengikuti program magang di <strong>SmartEV</strong>, berkontribusi dalam pengembangan dan penyempurnaan produk digital perusahaan kendaraan listrik.</p>
+              <div class="timeline-tags">
+                <span>Magang</span>
+                <span>SmartEV</span>
+                <span>Web Development</span>
+                <span>Laravel</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <h3>Pengembangan Sistem CafeSync</h3>
+              <p>Penyempurnaan UI/UX menggunakan Figma AI.</p>
+              <div class="timeline-tags">
+                <span>Dashboard</span>
+                <span>Inventory</span>
+                <span>Kasir</span>
+                <span>Owner Dashboard</span>
+                <span>Admin Dashboard</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <h3>Company Profile SmartEV</h3>
+              <p>Menyempurnakan website Company Profile berbasis Laravel.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <h3>Portfolio Development</h3>
+              <p>Membangun website portfolio pribadi dengan desain modern dan interaktif.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Projects</span>
+          <h2 class="section-title">Proyek Saya</h2>
+        </div>
+        <div class="project-filters reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+          <button class="filter-btn" data-filter="api">API</button>
+          <button class="filter-btn" data-filter="ml">ML</button>
+          <button class="filter-btn" data-filter="business">Business</button>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card glass reveal" data-category="web">
+            <div class="project-icon"><i class="fas fa-bolt"></i></div>
+            <h3>SmartEV</h3>
+            <p>Website Company Profile kendaraan listrik.</p>
+            <div class="project-tech">
+              <span>Laravel</span>
+              <span>Figma</span>
+              <span>MySQL</span>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="web">
+            <div class="project-icon"><i class="fas fa-coffee"></i></div>
+            <h3>CafeSync</h3>
+            <p>Sistem informasi manajemen kafe.</p>
+            <div class="project-tech">
+              <span>POS</span>
+              <span>Inventory</span>
+              <span>Dashboard</span>
+              <span>Laporan</span>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="business web">
+            <div class="project-icon"><i class="fas fa-store"></i></div>
+            <h3>Kizmain</h3>
+            <p>Business Digital Platform — Website Template Marketplace.</p>
+            <div class="project-tech">
+              <span>Template</span>
+              <span>UMKM</span>
+              <span>Digital Product</span>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="api">
+            <div class="project-icon"><i class="fas fa-plug"></i></div>
+            <h3>Laravel Task API</h3>
+            <p>REST API menggunakan Laravel Sanctum.</p>
+            <div class="project-tech">
+              <span>Laravel</span>
+              <span>Sanctum</span>
+              <span>REST API</span>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="mobile">
+            <div class="project-icon"><i class="fas fa-shopping-bag"></i></div>
+            <h3>Flutter Shopping App</h3>
+            <p>Aplikasi mobile menggunakan Flutter.</p>
+            <div class="project-tech">
+              <span>Flutter</span>
+              <span>Dart</span>
+              <span>Mobile</span>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="ml">
+            <div class="project-icon"><i class="fas fa-microscope"></i></div>
+            <h3>Breast Cancer Classification</h3>
+            <p>Machine Learning Classification Project.</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Scikit-Learn</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education section" id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Education</span>
+          <h2 class="section-title">Pendidikan</h2>
+        </div>
+        <div class="education-timeline">
+          <div class="education-item reveal">
+            <div class="education-dot"></div>
+            <article class="education-card glass">
+              <span class="education-period">2019 — 2022</span>
+              <div class="education-icon">
+                <i class="fas fa-school"></i>
+              </div>
+              <div class="education-content">
+                <h3>SMK Asallam Bandung</h3>
+                <p class="education-status">Pendidikan Menengah Kejuruan</p>
+                <p class="education-desc">Pada tahun 2022, mulai belajar <strong>Basic Pemrograman</strong> dan <strong>Laravel</strong>, membangun fondasi di bidang teknologi informasi sebelum melanjutkan ke perguruan tinggi.</p>
+                <div class="education-focus">
+                  <span><i class="fas fa-code"></i> Basic Pemrograman</span>
+                  <span><i class="fab fa-laravel"></i> Laravel</span>
+                  <span><i class="fas fa-laptop"></i> Komputer</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="education-item reveal">
+            <div class="education-dot"></div>
+            <article class="education-card glass">
+              <span class="education-period">2023 — Sekarang</span>
+              <div class="education-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="education-content">
+                <h3>Telkom University</h3>
+                <p class="education-status">D3 Sistem Informasi — Mahasiswa Aktif</p>
+                <p class="education-desc">Melanjutkan studi dengan fokus pada pengembangan sistem informasi, software, dan web development.</p>
+                <div class="education-focus">
+                  <span><i class="fas fa-database"></i> Sistem Informasi</span>
+                  <span><i class="fas fa-code"></i> Software Engineering</span>
+                  <span><i class="fas fa-globe"></i> Web Development</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Contact</span>
+          <h2 class="section-title">Hubungi Saya</h2>
+        </div>
+        <div class="contact-grid">
+          <a href="mailto:berliferizadam@example.com" class="contact-card glass reveal">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <h3>Email</h3>
+            <p>berliferizadam@example.com</p>
+          </a>
+          <a href="https://github.com/KizCode" target="_blank" rel="noopener noreferrer" class="contact-card glass reveal">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <h3>GitHub</h3>
+            <p>github.com/KizCode</p>
+          </a>
+          <a href="https://linkedin.com/in/berliferizadam" target="_blank" rel="noopener noreferrer" class="contact-card glass reveal">
+            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+            <h3>LinkedIn</h3>
+            <p>linkedin.com/in/berliferizadam</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="footer-quote">"Keep Learning, Keep Building."</p>
+      <p class="footer-copy">&copy; 2026 Berli Feriz Adam. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="https://github.com/KizCode" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/berliferizadam" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:berliferizadam@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
